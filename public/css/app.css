@@ -7,7 +7,19 @@ body {
 
 .main {
   background-image: linear-gradient(to right, #4f4d4f, #3b3b3d, #292a2b, #191a1a, #030404);
-  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.main .card {
+  margin: 10px 5px;
+}
+
+.main .card .card-body {
+  height: 200px;
+  overflow: scroll;
 }
 
 .black {

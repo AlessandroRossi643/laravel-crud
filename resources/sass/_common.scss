@@ -4,5 +4,17 @@ body{
 }
 .main{
   background-image: linear-gradient(to right, #4f4d4f, #3b3b3d, #292a2b, #191a1a, #030404);
-  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+
+  .card{
+    margin: 10px 5px;
+
+    .card-body{
+      height: 200px;
+      overflow: scroll;
+    }
+  }
 }

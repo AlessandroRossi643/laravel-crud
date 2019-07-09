@@ -11,7 +11,6 @@ class BootController extends Controller
     public function index()
     {
       $boots=Boot::all();
-      dd($boots);
       return view('index', compact('boots'));
     }
 
