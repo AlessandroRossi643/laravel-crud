@@ -11,7 +11,7 @@ class BootController extends Controller
     public function index()
     {
       $boots=Boot::all();
-      return view('index', compact('boots'));
+      return view('boots.index', compact('boots'));
     }
 
 
@@ -27,9 +27,16 @@ class BootController extends Controller
     }
 
 
-    public function show(Boot $boot)
+    public function show($idboot)
     {
-        //
+      $boot = Boot::find($idboot);
+      if (empty($boot)) {
+        abort(404);
+      }
+      else{
+        return view('boots.show',compact('boot'));
+      }
+
     }
 
 

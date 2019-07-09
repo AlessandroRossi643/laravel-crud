@@ -17,9 +17,9 @@ body {
   margin: 10px 5px;
 }
 
-.main .card .card-body {
-  height: 200px;
-  overflow: scroll;
+.show {
+  display: flex;
+  justify-content: center;
 }
 
 .black {

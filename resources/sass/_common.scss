@@ -11,10 +11,10 @@ body{
 
   .card{
     margin: 10px 5px;
-
-    .card-body{
-      height: 200px;
-      overflow: scroll;
-    }
   }
+}
+
+.show{
+  display: flex;
+  justify-content: center;
 }

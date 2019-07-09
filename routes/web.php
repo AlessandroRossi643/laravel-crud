@@ -11,7 +11,5 @@
 |
 */
 
-Route::get('/', function () {
-    return view('index/boots');
-});
+
 Route::resource('/boots','BootController');
