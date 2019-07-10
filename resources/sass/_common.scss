@@ -6,11 +6,12 @@ body{
   background-image: linear-gradient(to right, #4f4d4f, #3b3b3d, #292a2b, #191a1a, #030404);
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: space-around;
   flex-wrap: wrap;
+  padding: 20px 0;
 
   .card{
-    margin: 10px 5px;
+    margin: 20px;
   }
 }
 

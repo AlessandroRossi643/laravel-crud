@@ -1,5 +1,5 @@
 @extends('layouts.base')
-@section('title', 'Home - Lista Scarpe')
+@section('title', 'Home - Lista prodotti')
 
 @section('content')
 <div class="main container">
