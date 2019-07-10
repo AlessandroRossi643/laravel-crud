@@ -1,6 +1,6 @@
 <div class="container black">
   <nav class="navbar navbar-expand-lg navbar-light">
-    <a class="navbar-brand" href="#"><img src="https://goodtoknow.upfeat.com/vfiles/389-36f388a211aee050a3ffe78635711311.png" class="logo rounded float-left"></a>
+    <a class="navbar-brand" href="{{route('boots.index')}}"><img src="https://goodtoknow.upfeat.com/vfiles/389-36f388a211aee050a3ffe78635711311.png" class="logo rounded float-left"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>

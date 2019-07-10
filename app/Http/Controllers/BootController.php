@@ -23,7 +23,12 @@ class BootController extends Controller
 
     public function store(Request $request)
     {
-        //
+      $dati = $request->all();
+      $nuovo_prodotto = New Boot();
+      $nuovo_prodotto->fill($dati);
+      $nuovo_prodotto->save();
+
+      return redirect()->route('boots.index');
     }
 
 

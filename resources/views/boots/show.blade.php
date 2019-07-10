@@ -13,7 +13,7 @@
           <h3 class="card-title">{{$boot->name}}</h3>
           <p class="card-text">{{$boot->description}}</p>
           <h3 class="card-title">PRICE: {{$boot->price}}£</h3>
-          <a class="btn btn-dark" href="{{route('boots.index')}}" role="button">Torna nella home</a>
+          <a class="btn btn-dark" href="{{route('boots.index')}}" role="button">Torna alla home</a>
         </div>
       </div>
     </div>
