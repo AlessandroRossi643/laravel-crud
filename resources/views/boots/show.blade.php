@@ -5,10 +5,10 @@
 <div class="main container show ">
   <div class="card mb-3" style="max-width: 540px;">
     <div class="row no-gutters">
-      <div class="col-md-4">
+      <div class="col-md-12">
         <img src="{{$boot->img}}" class="card-img" alt="...">
       </div>
-      <div class="col-md-8">
+      <div class="col-md-12">
         <div class="card-body">
           <h3 class="card-title">{{$boot->name}}</h3>
           <p class="card-text">{{$boot->description}}</p>

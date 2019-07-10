@@ -58,6 +58,7 @@ class BootController extends Controller
 
     public function destroy(Boot $boot)
     {
-        //
+      $boot->delete();
+      return redirect()->route('boots.index');
     }
 }

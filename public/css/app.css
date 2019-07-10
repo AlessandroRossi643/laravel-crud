@@ -16,6 +16,13 @@ body {
 
 .main .card {
   margin: 20px;
+  box-shadow: 5px 2px 3px 5px;
+}
+
+.main .card .card-action {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .show {

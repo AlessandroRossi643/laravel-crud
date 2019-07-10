@@ -15,7 +15,7 @@
     </div>
     <div class="form-group text-white">
       <label for="image">Url Image(optional)</label>
-      <input type="text" class="form-control" name="img" placeholder="https://...">
+      <input type="url" name="img" class="d-block rounded p-2 w-75" placeholder="https:/...">
     </div>
     <div class="form-group text-white">
       <label for="price">Price (£)</label>
