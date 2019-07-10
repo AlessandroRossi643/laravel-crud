@@ -23,6 +23,7 @@ class BootController extends Controller
 
     public function store(Request $request)
     {
+
       $dati = $request->all();
       $nuovo_prodotto = New Boot();
       $nuovo_prodotto->fill($dati);
@@ -45,15 +46,25 @@ class BootController extends Controller
     }
 
 
-    public function edit(Boot $boot)
+    public function edit($boot_id)
     {
-        //
+      $boot=Boot::find($boot_id);
+      if (empty($boot)) {
+        abort(404);
+      }
+      $result=[
+        'boot'=> $boot
+      ];
+      return view('boots.edit',$result);
     }
 
 
-    public function update(Request $request, Boot $boot)
+    public function update(Request $request, $boot_id)
     {
-        //
+      $result = $request->all();
+      $boot = Boot::find($boot_id);
+      $boot->update($result);
+      return redirect()->route('boots.index');
     }
 
     public function destroy(Boot $boot)

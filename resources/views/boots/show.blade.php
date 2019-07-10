@@ -12,6 +12,7 @@
         <div class="card-body">
           <h3 class="card-title">{{$boot->name}}</h3>
           <p class="card-text">{{$boot->description}}</p>
+          <h4 class="card-title">AVAILABILITY: {{$boot->availability}}</h4>
           <h3 class="card-title">PRICE: {{$boot->price}}£</h3>
           <a class="btn btn-dark" href="{{route('boots.index')}}" role="button">Torna alla home</a>
         </div>
