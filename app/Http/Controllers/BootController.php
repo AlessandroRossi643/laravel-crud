@@ -23,6 +23,12 @@ class BootController extends Controller
 
     public function store(Request $request)
     {
+      $validatedData=$request->validate([
+        'name'=>'required|max:255|bail',
+        'description'=>'required',
+        'availability'=>'required|between:0,20|numeric',
+        'price'=>'required|between:0,9999.99|numeric'
+      ]);
 
       $dati = $request->all();
       $nuovo_prodotto = New Boot();
@@ -61,6 +67,13 @@ class BootController extends Controller
 
     public function update(Request $request, $boot_id)
     {
+      $validatedData=$request->validate([
+        'name'=>'required|max:255|bail',
+        'description'=>'required',
+        'availability'=>'required|between:0,20|numeric',
+        'price'=>'required|between:0,9999.99|numeric'
+      ]);
+
       $result = $request->all();
       $boot = Boot::find($boot_id);
       $boot->update($result);

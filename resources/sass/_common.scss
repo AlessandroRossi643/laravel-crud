@@ -27,3 +27,10 @@ body{
   display: flex;
   justify-content: center;
 }
+.error{
+  height: 100vh;
+  .error_message{
+    width: 80%;
+    height: 150px;
+  }
+}

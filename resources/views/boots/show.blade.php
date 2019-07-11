@@ -2,7 +2,7 @@
 @section('title', 'Visualizza prodotto')
 
 @section('content')
-<div class="main container show ">
+<div class="main container show">
   <div class="card mb-3" style="max-width: 540px;">
     <div class="row no-gutters">
       <div class="col-md-12">

@@ -2,7 +2,16 @@
 @section('title', 'Inserisci prodotto')
 
 @section('content')
-<div class="main container">
+  <div class="main container">
+    @if ($errors->any())
+      <div class="alert alert-danger">
+        <ul>
+            @foreach ($errors->all() as $error)
+              <li>{{ $error }}</li>
+            @endforeach
+        </ul>
+      </div>
+    @endif
   <form method="POST" action="{{route('boots.store')}}">
     @csrf
     <div class="form-group text-white">
@@ -25,7 +34,7 @@
       <label for="price">Price (£)</label>
       <input type="text" class="form-control w-25" name="price" placeholder="£">
     </div>
-    <button type="submit" class="btn btn-primary">Insert</button>
+    <button type="submit" class="btn btn-primary">Inserisci</button>
   </form>
 </div>
 @endsection

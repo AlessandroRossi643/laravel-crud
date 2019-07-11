@@ -3,6 +3,15 @@
 
 @section('content')
 <div class="main container">
+  @if ($errors->any())
+    <div class="alert alert-danger">
+      <ul>
+          @foreach ($errors->all() as $error)
+            <li>{{ $error }}</li>
+          @endforeach
+      </ul>
+    </div>
+  @endif
   <form method="POST" action="{{route('boots.update',$boot->id)}}">@method('PUT')
     @csrf
     <div class="form-group text-white">
